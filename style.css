@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    background-color: #141414;
+    color: #ffffff;
+    margin: 80px auto 48px auto;
+    width: 1120px;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo, nav {
+    font-size: 20px;
+    
+}
+
+.logo img {
+    width: 50%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0 0 32px;
+    transition: margin 1s;
+}
+
+a:hover {
+    margin: 5px;
+    background-color: #CD4092,
+}
+
+section {
+    margin: 80px 0 80px 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px 32px;
+}
+
+section h1 {
+    grid-column: 3 / span 8;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.project .image1 img {
+    grid-column: 1 / span 6;
+    width: 600px;
+    margin-left: 2em;
+    text-align: center;
+}
+
+.project .image-text1 {
+    grid-column: 3 / span 10 ;
+    margin-top: 2.3em;
+}
+
+section.project h2 {
+    text-transform: uppercase;
+}
+
+.project .image-text2 {
+    grid-column: 4 / span 7 ;
+    margin-top: 4.5em;
+}
+
+.project .image2 img {
+    grid-column: 8 / span 4;
+    width: 400px;
+    margin-left: 2em;
+    text-align: center;
+}
+
+.project .image3 img {
+    grid-column: 1 / span 6;
+    width: 480px;
+    margin-left: 2em;
+    text-align: center;
+}
+
+.project .image-text3 {
+    grid-column: 3 / span 10 ;
+    margin-top: 4.5em;
+}
+
+
+section.project button {
+    width: 9em;
+    height: 3em;
+    border: 2px solid white;
+    background-color: transparent;
+    color: unset;
+    margin: 20px 0 0 -30px;
+    font-size: 17px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    margin: 0 16px 0 16px;
+}
+
