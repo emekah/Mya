@@ -82,14 +82,14 @@ section.project h2 {
 
 .project .image3 img {
     grid-column: 1 / span 6;
-    width: 480px;
+    width: 600px;
     margin-left: 2em;
     text-align: center;
 }
 
 .project .image-text3 {
     grid-column: 3 / span 10 ;
-    margin-top: 4.5em;
+    margin-top: 2.2em;
 }
 
 
@@ -106,10 +106,23 @@ section.project button {
 footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 footer a {
-    margin: 0 16px 0 16px;
+    margin: 0 32px 0 32px;
+    color: rgb(148, 148, 148);
+    text-transform: uppercase;
+}
+
+.footer-cap h4 {
+    font-weight: 400;
+    color: rgb(148, 148, 148);
+}
+
+.footer-cap .footer-name {
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
 }
 
