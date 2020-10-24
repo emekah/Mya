@@ -25,16 +25,19 @@ header {
     width: 50%;
 }
 
-a {
+nav a {
     color: white;
     text-decoration: none;
-    margin: 0 0 0 32px;
-    transition: margin 1s;
+    margin: 0 0 0 60px;
+    
+    cursor: pointer;
 }
 
- nav a:hover {
-    margin: 4px;
-    color: #CD4092,
+
+nav a:hover {
+    color: #a01c69;
+    font-size: 22px;
+    transition: 1s;
 }
 
 section {
@@ -55,13 +58,15 @@ section h1 {
 .project .image1 img {
     grid-column: 1 / span 6;
     width: 600px;
+    height: 400px;
     margin-left: 2em;
     text-align: center;
 }
 
+
 .project .image-text1 {
-    grid-column: 3 / span 10 ;
-    margin-top: 2.3em;
+    grid-column: 2 / span 10 ;
+    margin-top: 1.8em;
 }
 
 section.project h2 {
@@ -69,44 +74,87 @@ section.project h2 {
 }
 
 .project .image-text2 {
-    grid-column: 3 / span 8 ;
-    margin-top: 4.5em;
+    grid-column: 1 / span 11 ;
+    margin: 7em 1em 0 2em;
 }
 
 .project .image2 img {
-    grid-column: 8 / span 4;
-    width: 400px;
-    margin-left: 2em;
+    grid-column: 4 / span 10;
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 5em;
     text-align: center;
 }
 
 .project .image3 img {
     grid-column: 1 / span 6;
-    width: 600px;
-    margin-left: 2em;
+    width: 550px;
+    margin: 5em 0 1em 2em;
     text-align: center;
 }
 
 .project .image-text3 {
-    grid-column: 3 / span 10 ;
-    margin-top: 2.2em;
+    grid-column: 2 / span 10 ;
+    margin-top: 6em;
 }
 
 
-section.project button {
+.btn {
     width: 9em;
     height: 3em;
     border: 2px solid white;
     background-color: transparent;
-    color: unset;
-    margin: 20px 0 0 -30px;
+    margin-top: 30px;
     font-size: 17px;
+    
 }
+
+a .btn {
+    color: white;
+    text-decoration: none;
+    transition: margin 1s;
+    cursor: pointer;
+}
+
+a:hover .btn {
+    border: 2px solid #a01c69;
+    transition: border 1s;
+}
+
+.about-img img {
+    grid-column: 1 / span 6;
+    margin: 0 1em 0 0;
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.about-txt {
+    grid-column: 3 / span 9;
+    padding-top: 3em;
+}
+
+.about-txt h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.contact-text {
+    grid-column: 3 / span 8;
+}
+
+input, textarea {
+    width: 100%;
+}
+
 
 footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 footer a {
@@ -124,5 +172,84 @@ footer a {
     font-weight: 600;
     color: white;
     text-transform: uppercase;
+}
+
+@media (max-width: 1248px) {
+    body {
+        width: auto;
+        margin: 80px 64px 48x 64px;
+    }
+
+    header {
+        margin: 0 50px 0 50px;
+    }
+
+    section, footer {
+        padding: 0 30px 0 30px;
+    }
+  
+}
+
+@media (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .logo img {
+        width: 40%;
+        text-align: center;
+    }
+
+    nav {
+        font-size: 18px;
+        align-items: center;
+              
+    }
+
+    section h1{
+        grid: 1 / span 2;
+        font-size: 18px;
+        
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project .image1 img {
+        display: block;
+        width: 300px;
+    }
+
+    
+}
+
+@media (max-width: 977px) {
+    .project .image1 img {
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (max-width: 920px) {
+    section {
+        margin: 40px 0 40px 0;
+    }
+    header {
+        flex-direction: column;
+    }
+    .logo {
+        text-align: center;
+    }
+    nav {
+        margin: 30px;
+    }
+    nav a {
+        margin: 0 0 0 46px;
+        align-items: center;
+    }
 }
 
